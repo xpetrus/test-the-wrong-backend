@@ -5,10 +5,10 @@ from .models import Category, Quote
 class CategorySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Category
-        fields = 'name'
+        fields = ('name',)
 
 
-class MenuSerializer(serializers.HyperlinkedModelSerializer):
+class QuoteSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Quote
         fields = ('category', 'quote')
