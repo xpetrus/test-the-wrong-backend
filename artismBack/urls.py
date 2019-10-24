@@ -18,6 +18,7 @@ from django.urls import path
 from django.conf.urls import include
 
 urlpatterns = [
+    path('sms/', include('sms.urls')),
     path('admin/', admin.site.urls),
     path('api/', include('quote.urls'))
 
